@@ -1,33 +1,33 @@
-import React, { useContext, useRef, useState } from 'react'
+import React, {   useState } from 'react'
 import { NavLink} from 'react-router-dom'
 import Logo from '../Logo/Logo'
 import './Header.css'
 import Search from './Img/search.svg'
-import { PostsContext } from '../../Context/PostContext'
+// import { PostsContext } from '../../Context/PostContext'
 
 
 
 export const Header = () => {
   const [click, setClick]= useState(true);
-  const inputRef= useRef()
+  // const inputRef= useRef()
  
   const clickedButton =()=>{
     return setClick(!click)
   }
 
-  const {posts, setPosts} = useContext(PostsContext)
- const searchPosts= (evt)=>{
-const inputValue = evt.target.value.trim();
+//   const {posts, setPosts} = useContext(PostsContext)
+//  const searchPosts= (evt)=>{
+// const inputValue = evt.target.value.trim();
  
-posts.filter((post)=> {
-  if(inputValue= ''){
-    return post
-  }
-  else if ( post.title.includes(inputValue)){
-    return post
-  }
-})
- }
+// posts.filter((post)=> {
+//   if(inputValue= ''){
+//     return post
+//   }
+//   else if ( post.title.includes(inputValue)){
+//     return post
+//   }
+// })
+//  }
 
 
 
@@ -83,7 +83,7 @@ isActive? "navitem navitem--active" : 'navitem'
 <div className='header_search'>
 <input className='input_serach' type='text' placeholder='Serach' />
 
-<button onClick={searchPosts} className='button_search'><img src={Search} alt="search" /></button>
+<button  className='button_search'><img src={Search} alt="search" /></button>
 </div>
 </div>
 
