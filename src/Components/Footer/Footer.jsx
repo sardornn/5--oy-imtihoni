@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './Footer.css'
-import FootLogo from './Img/footer/.svg'
+import FootLogo from './Img/footer.svg'
 const Footer = () => {
     return (
         <div className='footer'>
