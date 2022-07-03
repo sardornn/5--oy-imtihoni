@@ -1,0 +1,157 @@
+.header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 26px;
+    margin-bottom: 80px;
+}
+.nav_item{
+    list-style-type: none;
+}
+.header_left{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+}
+.navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 106px;
+    text-decoration: none;
+}
+.navitem{
+    font-family: 'Roboto Mono';
+    margin: 0;
+    margin-right: 40px;
+    color: #9A9A9A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: inline ;
+    text-decoration: none;
+    
+}
+.navitem--active{
+    border-bottom: 2px solid #777777;
+}
+.header_search{
+    display: flex;
+}
+.input_serach{
+    width: 216px;
+    height: 40px;
+    
+    margin: 0;
+    padding: 12px 14px;
+    font-family: 'Roboto Mono';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: transparent;
+    background: #F4F4F4;
+    border-radius: 3px;
+    
+}
+.button_search{
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    background: #FFBA9D;
+    border-radius: 3px;
+    border: transparent;
+    
+    
+    
+}
+.header_hamburder{
+    display: none;
+}
+@media only screen and (max-width: 1010px){
+    
+    .navlist{
+        margin: 0;
+    }
+    .input_serach{
+        width: 245px;
+       
+        margin: 0;
+     
+    }
+    .header{
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .header{
+        flex-direction: column;
+    }
+    
+}
+
+
+@media only screen and (max-width: 676px){
+    .header{
+        z-index: 1000;
+    }
+    .header_left{
+        position: relative;
+    }
+    .navlist{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        top: 85px;
+        right: 0;
+        left: 0;
+        background: #E5E5E5;
+        z-index: 99;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+      padding-top: 100px;
+       
+
+    }
+    .navitem{
+        display: inline;
+        margin: 0 auto;
+        text-align: center;
+        width: 157px;
+        margin-bottom: 50px;
+        
+
+    }
+    .nav_item{
+        margin-bottom: 50px;
+
+    }
+    .header_hamburder{
+        display: block;
+    }
+    .button_hamburger{
+        border: transparent;
+        background-color: transparent;
+        text-align: center;
+        align-items: center;
+    }
+    .span{
+        display: none;
+    }
+    .span_ok{
+        display: block;
+    }
+    
+}

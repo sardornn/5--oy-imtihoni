@@ -1,0 +1,72 @@
+@import '../../Assets/Scss/Fonts.css';
+
+.sidebar{
+    max-width: 328px;
+    width: 100%;
+    margin-bottom: 28px;
+    margin-right: 109px;
+
+}
+
+.sidebar_header{
+   margin: 0;
+   margin-bottom: 36px;
+   padding: 0;
+font-family: 'Roboto Mono';
+font-size: 24px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.sidebar_paragraph{
+  
+
+font-family:' Roboto Mono';
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+font-family: 'Roboto Mono';
+color: #474747;
+
+
+}
+.explore_div{
+    margin-bottom: 53px;
+}
+.explore{
+    font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #474747;
+margin: 0;
+margin-right: 16px;
+
+
+}
+.explore_button{
+    box-sizing: border-box;
+margin: 0;
+display: block;
+padding:0  8px;
+border: transparent;
+background: #F4F4F4;
+border-radius: 3px;
+
+}
+
+.span_logo{
+    margin-right: 24px;
+}
+@media only screen and (max-width: 676px){
+    .sidebar{
+        display: none;
+    }
+    
+}

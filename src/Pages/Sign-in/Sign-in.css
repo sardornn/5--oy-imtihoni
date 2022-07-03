@@ -1,0 +1,46 @@
+.containe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: auto - 0;
+}
+
+.form{
+    width: 350px;
+}
+.header_login{
+    font-family: Roboto Mono;
+    margin: 0;
+    margin-bottom: 56px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.input_login{
+    max-width: 350px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 10px 14px;
+    background: #F4F4F4;
+    border-radius: 3px;
+    border: transparent;
+    box-sizing: border-box;
+}
+
+.login_button{
+    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #000000;
+    border-radius: 3px;
+    color: white;
+}
